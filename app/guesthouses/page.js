@@ -7,32 +7,42 @@ export default function GuestHouses() {
     <div className="bg-white text-gray-900">
       {/* Hero Section */}
       <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
-        <img
-          src="/guesthouse6.jpg"
-          alt="Guest House Hero"
+        {" "}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
           className="absolute inset-0 w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-black/60" />
+        >
+          {" "}
+          <source src="/guesthouse.mp4" type="video/mp4" />{" "}
+        </video>{" "}
+        <div className="absolute inset-0 bg-black/60" />{" "}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           className="relative z-10 text-center text-white px-6"
         >
+          {" "}
           <h1 className="text-5xl md:text-6xl font-extrabold mb-6">
-            Cozy Guest Houses in Douala & Yaoundé
-          </h1>
+            {" "}
+            Cozy Guest Houses in Douala & Yaoundé{" "}
+          </h1>{" "}
           <p className="max-w-2xl mx-auto text-lg md:text-xl mb-8 opacity-90">
+            {" "}
             Experience comfort, privacy, and affordability in our modern guest
-            houses, designed for your relaxation.
-          </p>
+            houses, designed for your relaxation.{" "}
+          </p>{" "}
           <a
             href="/contact"
             className="px-8 py-4 bg-[#dda15e] hover:bg-[#c98e4c] text-white rounded-2xl shadow-lg text-lg font-semibold"
           >
-            Book Your Stay
-          </a>
-        </motion.div>
+            {" "}
+            Book Your Stay{" "}
+          </a>{" "}
+        </motion.div>{" "}
       </section>
 
       {/* About Section */}
