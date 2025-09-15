@@ -8,14 +8,15 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-md">
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-6 py-1 flex items-center justify-between">
         {/* Logo with Image */}
-        <Link href="/" className="flex items-center space-x-3">
+        <Link href="/" className="flex items-center space-x-3 rounded">
           {/* Replace /images/logo.png with your actual logo */}
           <img
+            style={{ borderRadius: "10px" }}
             src="/logo.png"
             alt="Poultry & GuestHouse Logo"
-            className="h-10 w-10 object-contain"
+            className="h-20 object-contain rounded"
           />
         </Link>
 
