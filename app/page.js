@@ -3,16 +3,17 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import HeroVideo from "../components/HeroVideo";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const MotionLink = motion(Link);
 
 export default function Home() {
   return (
     <div className="min-h-screen w-full bg-white text-gray-900">
-      {/* Hero Section */}
+      <Navbar />
       <HeroVideo />
 
-      {/* Highlights */}
       <div className="grid md:grid-cols-2 gap-10 px-6 py-20 max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, x: -60 }}
@@ -52,6 +53,7 @@ export default function Home() {
           </div>
         </motion.div>
       </div>
+      <Footer />
     </div>
   );
 }

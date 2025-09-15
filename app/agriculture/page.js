@@ -2,10 +2,13 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 export default function Agriculture() {
   return (
     <div className="bg-neutral-50 text-gray-900">
+      <Navbar />
       {/* 1. Hero Section */}
       <section className="relative h-[90vh] w-full flex items-center justify-center overflow-hidden">
         <video
@@ -272,7 +275,7 @@ export default function Agriculture() {
       </section>
 
       {/* 8. Testimonials */}
-      <section className="py-20 px-6 bg-gradient-to-r from-[#dda15e] to-[#dda15e] text-white">
+      <section className="py-30 px-6 bg-gradient-to-r from-emerald-700 to-emerald-600 text-white">
         <div className="max-w-6xl mx-auto text-center mb-12">
           <h2 className="text-4xl font-bold mb-6">What Our Clients Say</h2>
         </div>
@@ -307,7 +310,7 @@ export default function Agriculture() {
       </section>
 
       {/* 9. Contact / CTA */}
-      <section className="py-20 bg-emerald-700 text-white text-center">
+      <section className="py-40 bg-white text-emerald-700 text-center">
         <h2 className="text-4xl font-bold mb-6">Partner With Us</h2>
         <p className="max-w-2xl mx-auto text-lg mb-10 opacity-90">
           Looking for bulk meat supply or fresh farm products? Contact us today
@@ -323,7 +326,7 @@ export default function Agriculture() {
           <a
             href="https://wa.me/237XXXXXXXXX"
             target="_blank"
-            className="px-8 py-4 bg-[#dda15e] hover:bg-[#dda15e]-600 text-white font-semibold rounded-2xl shadow-lg transition"
+            className="px-8 py-4 bg-emerald-700 hover:bg-emerald-700-600 text-white font-semibold rounded-2xl shadow-lg transition"
           >
             WhatsApp Us
           </a>
@@ -335,6 +338,7 @@ export default function Agriculture() {
           </a>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

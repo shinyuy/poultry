@@ -1,10 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 export default function GuestHouses() {
   return (
     <div className="bg-white text-gray-900">
+      <Navbar />
       {/* Hero Section */}
       <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
         {" "}
@@ -284,6 +287,7 @@ export default function GuestHouses() {
           Book Now
         </motion.a>
       </section>
+      <Footer />
     </div>
   );
 }
