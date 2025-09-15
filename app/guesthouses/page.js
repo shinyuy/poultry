@@ -142,7 +142,7 @@ export default function GuestHouses() {
             Guest House Gallery
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
-            {["gallery1.jpg", "gallery2.jpg", "guesthouse2.jpg"].map(
+            {["gallery1.jpg", "guesthouse2.jpg", "gallery3.jpg"].map(
               (img, i) => (
                 <motion.img
                   key={i}
