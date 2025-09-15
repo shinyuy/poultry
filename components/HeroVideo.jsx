@@ -7,7 +7,7 @@ import Link from "next/link";
 const MotionLink = motion(Link);
 
 export default function HeroVideo() {
-  const videos = ["/poultry1.mp4", "/guesthouse.mp4"];
+  const videos = ["/guesthouse.mp4", "/poultry1.mp4"];
   const [currentVideo, setCurrentVideo] = useState(0);
   const videoRef = useRef(null); // <-- Use plain useRef in JSX
 
